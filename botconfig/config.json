@@ -1,0 +1,19 @@
+{
+    "owners": {
+        "nicaId": "",
+        "ids": []
+    },
+    "bot": {
+        "token": "",
+        "invitacion": "",
+        "clientId": "",
+        "clientSecret": ""
+    },
+    "servidor": {
+        "id": "",
+        "discord": ""
+    },
+    "mongodb": {
+        "uri": ""
+    }
+}
