@@ -7,7 +7,7 @@ const client = new Client({
     shards: 'auto',
     allowedMentions: {
         parse: ['everyone', 'roles', 'users'],
-        repliedUser: true,
+        repliedUser: false,
     },
     rest: { timeout: ms('1m') },
     failIfNotExists: false,
