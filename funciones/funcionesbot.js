@@ -100,18 +100,15 @@ async function loadcommands(client) {
  */
 async function loadhandlers(client) {
 
-    const table = new ascii().setHeading('Handlers', 'Estado', 'Problemas')
-
     const handlersFiles = await loadfiles('handlers')
 
     handlersFiles.forEach((file) => {
 
         require(file)(client)
 
-        table.addRow(`${handlersFiles.length}`, '✅', 'Sin problemas')
     })
 
-    console.log(table.toString(), '\n [SISTEMA] :: Handlers cargados'.blue)
+    console.log(` [SISTEMA] :: ${handlersFiles.length} Handlers cargados`.blue)
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 module.exports = {
